@@ -1,97 +1,107 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+
+body {
+    background-color: #E0CCBE;
+    padding-bottom: 3rem;
+}
+
+.container {
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
-.navcon{
+
+.navcon {
     display: flex;
     justify-content: space-between;
-    
-    & .home{
+
+    .home {
         list-style: none;
-        & li{
-            & a{
+
+        li {
+            a {
                 text-decoration: none;
-                color:white;
+                color: white;
             }
         }
     }
 }
-.menu{
-    display:flex;
+
+.menu {
+    display: flex;
     list-style: none;
-    & li{
+
+    li {
         margin-left: 1rem;
-        & a{
+
+        a {
             text-decoration: none;
-            color:white;
+            color: white;
         }
     }
 }
-.imagee{
-    padding:2rem;
-    max-width: 450px;
+
+.imagee {
+    padding: 1rem; 
+    max-width: 100%;
     height: auto;
     justify-content: space-around;
 }
-.about{
+
+.about,
+.showcase,
+.contact {
     text-align: center;
     text-overflow: ellipsis;
-    width: 1000px;
-    padding: 2 rem;
-    font-size: 20px;
+    max-width: 100%; 
+    font-size: 18px;
     font-family: monospace;
+    padding: 1rem;
 }
-.showcase{
-    padding: 2 rem;
-    text-align: center;
-    text-overflow: ellipsis;
-    width: 1000px;
-    font-size: 20px;
-    font-family: monospace;
-    & .skill{
-        padding:2 rem;
-        margin:auto;
-        width: 50%;
-    }
+
+.showcase .skill {
+    width: 100%;
 }
-.contact{
-    padding: 2 rem;
-    text-align: center;
-    text-overflow: ellipsis;
-    width: 1000px;
-    font-size: 20px;
-    font-family: monospace;
-    margin: 0 10px;
-    & div{
+.contact {
+    margin: 0 1rem;
+
+    div {
         justify-content: space-around;
     }
 }
-.contact-img{
-    justify-content: space-around;
-    width: 40px;
+.contact-img {
+    width: 30px; 
     height: auto;
-    margin: 0 10px
+    margin: 0 1rem;
 }
-.img-container{
+
+.img-container {
     display: flex;
-    margin: 0px;
+    margin: 0;
 }
-nav{
+
+nav {
     background-color: #3C3633;
-    padding:2rem;
+    padding: 1rem;
     text-align: center;
-    color:#ffffff;
+    color: #ffffff;
     position: sticky;
-    top:0;
+    top: 0;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 18px;
 }
-body{
-    background-color: #E0CCBE;
-    padding-bottom: 3rem;
+@media screen and (max-width: 600px) {
+    .navcon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
 }
