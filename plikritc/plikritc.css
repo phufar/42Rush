@@ -12,44 +12,53 @@ body {
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 1rem;
+}
+
+nav {
+    background-color: #333;
+    text-align: center;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navcon {
     display: flex;
     justify-content: space-between;
+}
 
-    .home {
-        list-style: none;
-
-        li {
-            a {
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
+.home {
+    list-style: none;
 }
 
 .menu {
     display: flex;
     list-style: none;
+}
 
-    li {
-        margin-left: 1rem;
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 16px 16px;
+}
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
-    }
+nav a:hover {
+    background-color: #474747;
 }
 
 .imagee {
-    padding: 1rem; 
+    padding: 1rem;
+    width: auto;
     max-width: 100%;
-    height: auto;
     justify-content: space-around;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .about,
@@ -57,7 +66,7 @@ body {
 .contact {
     text-align: center;
     text-overflow: ellipsis;
-    max-width: 100%; 
+    max-width: 100%;
     font-size: 18px;
     font-family: monospace;
     padding: 1rem;
@@ -76,30 +85,18 @@ body {
 }
 
 .contact-img {
-    width: 30px; 
+    width: 30px;
     height: auto;
     margin: 0 1rem;
 }
+
 
 .img-container {
     display: flex;
     margin: 0;
 }
 
-nav {
-    background-color: #333;
-    padding: 1rem;
-    text-align: center;
-    color: #ffffff;
-    position: sticky;
-    top: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22px;
-}
 
-nav a:hover {
-    background-color: #474747;
-}
 
 @media screen and (max-width: 600px) {
     .navcon {
@@ -108,7 +105,7 @@ nav a:hover {
     }
 
     .menu {
-        flex-direction: column;
         align-items: center;
+        margin-top: auto;
     }
 }
